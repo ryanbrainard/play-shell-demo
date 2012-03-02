@@ -1,0 +1,3 @@
+[submodule "vendor/play-shell"]
+	path = vendor/play-shell
+	url = git://github.com/grandfatha/play-shell.git
