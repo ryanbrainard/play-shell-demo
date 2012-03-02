@@ -2,6 +2,7 @@
 
 require:
     - play
+    - play -> crud
     - play-shell -> play-shell
 
 repositories: 
