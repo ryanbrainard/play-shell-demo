@@ -1,5 +1,6 @@
 package models;
 
+import play.data.validation.Required;
 import play.db.jpa.Model;
 
 import javax.persistence.CascadeType;
@@ -12,6 +13,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Comment extends Model {
 
+    @Required
     @ManyToOne(cascade = CascadeType.ALL)
     public Post post;
     
