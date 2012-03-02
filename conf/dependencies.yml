@@ -2,3 +2,11 @@
 
 require:
     - play
+    - play-shell -> play-shell
+
+repositories: 
+    - vendored-modules: 
+        type: local 
+        artifact: ${application.path}/vendor/[module] 
+        contains: 
+            - play-shell
