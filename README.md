@@ -17,16 +17,16 @@ This demo application has already been configured with the `play-shell` module, 
 2. Update your `dependecies.yml`
 
 
-    require:
-        - play
-        - play-shell -> play-shell
-
-    repositories:
-        - vendored-modules:
-            type: local
-            artifact: ${application.path}/vendor/[module]
-            contains:
-                - play-shell
+        require:
+            - play
+            - play-shell -> play-shell
+    
+        repositories:
+            - vendored-modules:
+                type: local
+                artifact: ${application.path}/vendor/[module]
+                contains:
+                    - play-shell
 
 
 3. Run `play dependecies` to install the module.
